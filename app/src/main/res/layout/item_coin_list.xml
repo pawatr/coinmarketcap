@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/coinItemImg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription"
+            tools:src="@color/gray" />
+
+        <TextView
+            android:id="@+id/coinNameItemTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/coinPriceItemTv"
+            app:layout_constraintStart_toEndOf="@+id/coinItemImg"
+            app:layout_constraintTop_toTopOf="@+id/coinItemImg"
+            tools:text="Bit Coin" />
+
+        <TextView
+            android:id="@+id/coinSymbolItemTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/coinChangeItemTv"
+            app:layout_constraintStart_toEndOf="@+id/coinItemImg"
+            app:layout_constraintTop_toBottomOf="@+id/coinNameItemTv"
+            tools:text="BTC" />
+
+        <TextView
+            android:id="@+id/coinPriceItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAlignment="textEnd"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/coinNameItemTv"
+            app:layout_constraintTop_toTopOf="@+id/coinItemImg"
+            app:layout_constraintBottom_toBottomOf="@+id/coinNameItemTv"
+            tools:text="$56,671.41180" />
+
+        <ImageView
+            android:id="@+id/arrowChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            app:layout_constraintBottom_toBottomOf="@+id/coinChangeItemTv"
+            app:layout_constraintEnd_toStartOf="@+id/coinChangeItemTv"
+            app:layout_constraintTop_toTopOf="@+id/coinChangeItemTv"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/ic_arrow_up" />
+
+        <TextView
+            android:id="@+id/coinChangeItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textAlignment="textEnd"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/coinSymbolItemTv"
+            app:layout_constraintTop_toTopOf="@+id/coinSymbolItemTv"
+            tools:text="6.7" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

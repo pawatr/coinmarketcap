@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">CoinMarketCap</string>
+    <string name="format_price" formatted="false">$%.5f</string>
+    <string name="coin_top_rank_title">Top 3 rank crypto</string>
+    <string name="coin_top_rank_title_bold">3</string>
+    <string name="coin_list_title">Buy, sell and hold crypto</string>
+    <string name="text_invite_friend">You can earn $10  when you invite a friend to buy crypto. Invite your friend</string>
+    <string name="text_invite_friend_bold">Invite your friend</string>
+    <string name="hint_search">Search</string>
+    <string name="text_retry">Retry</string>
+    <string name="text_sorry">Sorry</string>
+    <string name="text_search_is_empty">No result match this keyword</string>
+    <string name="text_try_again">Try again</string>
+    <string name="text_could_not_laod">"Could not load data "</string>
+</resources>
